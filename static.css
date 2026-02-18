@@ -5,41 +5,120 @@
   font-family: "Segoe UI", sans-serif;
 }
 
-body {
-  background: #f6efe7;
-  color: #1e1e1e;
-}
 
-/* NAV */
+/* NAVBAR BACKGROUND */
 .nav {
+  background: #d7de6f;   /* light yellow green */
   display: flex;
   justify-content: space-between;
-  padding: 20px 60px;
- background: #e8ee7c;
+  align-items: center;
+  padding: 18px 60px;
 }
 
+/* LEFT LOGO */
 .logo {
   display: flex;
-  gap: 10px;
   align-items: center;
+  gap: 15px;
 }
 
 .circle {
-  background: #222;
-  color: #fff;
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
+  background: #2b1904;
+  color: white;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
 }
 
-.nav nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #222;
-  font-size: 14px;
+.logo-text {
+  display: flex;
+  flex-direction: column;
 }
+
+.logo-text strong {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2b1904;
+}
+
+.logo-text small {
+  font-size: 14px;
+  color: #2b1904;
+}
+
+/* CENTER MENU */
+.menu {
+  display: flex;
+  gap: 50px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #2b1904;
+  font-size: 17px;
+  font-weight: 500;
+  position: relative;
+}
+
+/* UNDERLINE ACTIVE LINK */
+.menu a.active {
+  text-decoration: underline;
+}
+
+/* RIGHT SECTION */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+/* SOCIAL ICONS */
+.social {
+  display: flex;
+  gap: 18px;
+}
+
+.social a {
+  background: black;
+  color: white;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  background: #2b1904;
+}
+
+/* LOGIN SECTION */
+.login {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2b1904;
+}
+
+.login i {
+  font-size: 18px;
+}
+
+.login a {
+  text-decoration: none;
+  color: #2b1904;
+  font-size: 16px;
+}
+
 body{
   margin:0;
   font-family: 'Calibri', sans-serif;

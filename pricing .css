@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f2eee9;
+}
+
+/* NAVBAR BACKGROUND */
+.nav {
+  background: #d7de6f;   /* light yellow green */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+}
+
+/* LEFT LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background: #2b1904;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text strong {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2b1904;
+}
+
+.logo-text small {
+  font-size: 14px;
+  color: #2b1904;
+}
+
+/* CENTER MENU */
+.menu {
+  display: flex;
+  gap: 50px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #2b1904;
+  font-size: 17px;
+  font-weight: 500;
+  position: relative;
+}
+
+/* UNDERLINE ACTIVE LINK */
+.menu a.active {
+  text-decoration: underline;
+}
+
+/* RIGHT SECTION */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+/* SOCIAL ICONS */
+.social {
+  display: flex;
+  gap: 18px;
+}
+
+.social a {
+  background: black;
+  color: white;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  background: #2b1904;
+}
+
+/* LOGIN SECTION */
+.login {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2b1904;
+}
+
+.login i {
+  font-size: 18px;
+}
+
+.login a {
+  text-decoration: none;
+  color: #2b1904;
+  font-size: 16px;
+}
+
+/* SECTION BACKGROUND */
+.pricing {
+  background: #e9e3da;
+  padding: 100px 40px;
+}
+
+.pricing-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* CARD DESIGN */
+.price-card {
+  background: #e3dbd1;
+  width: 340px;
+  border-radius: 25px;
+ .price-card {
+  overflow: visible;
+}
+
+  position: relative;
+  border: 1px solid #d4cdc4;
+}
+
+/* TOP AREA */
+.card-top {
+  padding: 50px 30px 40px;
+  text-align: center;
+}
+
+.card-top h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #4d463f;
+}
+
+.currency {
+  font-size: 18px;
+  margin: 10px 0 0;
+  color: #4d463f;
+}
+
+.card-top h1 {
+  font-size: 70px;
+  font-weight: 500;
+  margin: 0;
+  color: #4d463f;
+}
+
+.sub {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #4d463f;
+}
+
+.valid {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #6f665c;
+}
+
+/* BUTTON */
+.select-btn {
+  margin-top: 30px;
+  background: #2f5d58;
+  color: #fff;
+  border: none;
+  padding: 14px 90px;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.select-btn:hover {
+  background: #244a46;
+}
+
+/* DIVIDER */
+.card-bottom {
+  border-top: 1px solid #d4cdc4;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.card-bottom p {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #4d463f;
+}
+
+/* FEATURED CARD */
+.featured {
+  background: #dedbd4;
+}
+
+.best-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #3b2d22;
+  color: #fff;
+  padding: 6px 16px;
+  font-size: 12px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.footer {
+  background: #e7dfd6; /* beige */
+  padding: 60px 80px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* LEFT SIDE */
+.footer-left {
+  max-width: 400px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #3b2d22;
+  font-size: 15px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #3b2d22;
+}
+
+/* RIGHT SIDE */
+.footer-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 60px;
+}
+
+.footer-right a {
+  text-decoration: underline;
+  color: #3b2d22;
+  font-size: 15px;
+}

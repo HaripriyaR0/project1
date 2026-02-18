@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f2eee9;
+}
+
+/* NAVBAR */
+
+/* NAVBAR BACKGROUND */
+.nav {
+  background: #d7de6f;   /* light yellow green */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+}
+
+/* LEFT LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background: #2b1904;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text strong {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2b1904;
+}
+
+.logo-text small {
+  font-size: 14px;
+  color: #2b1904;
+}
+
+/* CENTER MENU */
+.menu {
+  display: flex;
+  gap: 50px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #2b1904;
+  font-size: 17px;
+  font-weight: 500;
+  position: relative;
+}
+
+/* UNDERLINE ACTIVE LINK */
+.menu a.active {
+  text-decoration: underline;
+}
+
+/* RIGHT SECTION */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+/* SOCIAL ICONS */
+.social {
+  display: flex;
+  gap: 18px;
+}
+
+.social a {
+  background: black;
+  color: white;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  background: #2b1904;
+}
+
+/* LOGIN SECTION */
+.login {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2b1904;
+}
+
+.login i {
+  font-size: 18px;
+}
+
+.login a {
+  text-decoration: none;
+  color: #2b1904;
+  font-size: 16px;
+}
+/* Section Background */
+.about {
+  background: #d6df6b;   /* light lime green */
+  padding: 100px 80px;
+  min-height: 100vh;
+}
+
+/* Container Layout */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* Left Content */
+.about-left {
+  flex: 1;
+}
+
+.about-title {
+  font-size: 90px;
+  font-weight: 500;
+  color: #2b1d14;
+  margin-bottom: 80px;
+}
+
+.about-subtitle {
+  font-size: 32px;
+  font-weight: 500;
+  color: #2b1d14;
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+
+.about-text {
+  font-size: 22px;
+  line-height: 1.8;
+  color: #3b2d22;
+  max-width: 500px;
+ text-align: justify;
+}
+
+/* Right Image */
+.about-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-right img {
+     width: 550px;
+    height: 506px;
+    border-radius: 16px;
+    position: relative;
+    left:86px;
+
+  object-fit: cover;
+}
+
+
+
+/* TESTIMONIALS */
+.testimonials {
+  background: #e9e3da;
+  padding: 80px 80px;
+}
+
+.testimonials h2 {
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.testimonial-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 100px;
+  align-items: center;
+  padding: 25px 0;
+  border-bottom: 1px solid #bfb7ae;
+}
+
+.testimonial-row h4 {
+  font-size: 20px;
+}
+
+.testimonial-row p {
+  font-size: 20px;
+}
+
+.testimonial-row span {
+  font-size: 20px;
+  text-align: right;
+}
+
+
+/* BIG CTA */
+.about-cta {
+ background: #f1ed75;
+    padding: 70px;
+    height: 397px;
+    margin: 60px auto;
+    width: 90%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.about-cta h2 {
+  position: relative;
+    top: 47px;
+    font-size: 38px;
+}
+
+.about-btn {
+  background: #2f5d58;
+  color: white;
+  border: none;
+  padding: 12px 45px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 22px;
+  position: relative;
+  top: 125px;
+}
+.footer {
+  background: #e7dfd6; /* beige */
+  padding: 60px 80px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* LEFT SIDE */
+.footer-left {
+  max-width: 400px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #3b2d22;
+  font-size: 15px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #3b2d22;
+}
+
+/* RIGHT SIDE */
+.footer-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 60px;
+}
+
+.footer-right a {
+  text-decoration: underline;
+  color: #3b2d22;
+  font-size: 15px;
+}
