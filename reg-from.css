@@ -1,0 +1,98 @@
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  padding: 30px;
+  color: #1f2937;
+}
+
+/* PAGE LOAD ANIMATION */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* FORM CARD */
+form {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px 40px;
+  /* border-radius: 12px; */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  animation: fadeSlideUp 0.8s ease-out;
+
+}
+.card{
+   background-color: #d073ea;
+  max-width: 900px;
+  margin: auto;
+  height: 146px ;
+}
+/* TITLE */
+h1 {
+  /* text-align: center; */
+ 
+ color: #f3f2f4;
+    position: absolute;
+    top: 70px;
+    left: 345px;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+/* LABELS */
+label {
+  font-weight: 600;
+  margin-top: 15px;
+  display: grid;
+  grid-template-rows:1 2fr ;
+}
+
+/* INPUTS */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+textarea {
+  width: 45%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1px solid #121416;
+  background-color: #f1e0f5;
+  border-radius:3px;
+  outline: none;
+  transition: all 0.3s ease;
+  display: grid;
+  /* grid-row: 1 3fr; */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+  border-color: #0a0a0a;
+  box-shadow: 0 0 0 2px rgba(214, 168, 230, 0.15);
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+h3{
+  font-size: 22px;
+  color: #d073ea;
+}
+
